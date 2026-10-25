@@ -1,5 +1,4 @@
 import { createFileRoute } from "@tanstack/react-router";
-import logo from "@/assets/ilmora-logo-full.png.asset.json";
 import { useI18n } from "@/lib/i18n";
 import { seo } from "@/lib/seo";
 import { PageHero } from "@/components/site/Chrome";
@@ -17,7 +16,7 @@ function About() {
     <>
       <PageHero title={a.title} sub={a.sub} />
       <section className="container-x grid items-center gap-12 py-20 lg:grid-cols-[1fr_1.2fr]">
-        <img src={logo.url} alt="IlmORA Academy logo with tagline in English and Arabic" width={600} height={600} loading="lazy" className="mx-auto w-full max-w-sm" />
+        <img src="/favicon.png" alt="IlmORA Academy logo" width={64} height={64} loading="lazy" className="mx-auto size-40 object-contain" />
         <div className="space-y-5 text-lg text-muted-foreground"><p>{a.p1}</p><p>{a.p2}</p></div>
       </section>
       <section className="bg-secondary">

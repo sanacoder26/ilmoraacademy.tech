@@ -1,8 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { useState, type ReactNode } from "react";
 import { ChevronDown, Menu, X, Mail, Phone, MessageCircle } from "lucide-react";
-import emblem from "@/assets/ilmora-emblem.png.asset.json";
-import logo from "@/assets/ilmora-logo.png.asset.json";
 import { useI18n } from "@/lib/i18n";
 import { COURSE_SLUGS, SITE, whatsappLink } from "@/lib/site";
 
@@ -20,7 +18,7 @@ export function LangSwitch({ className = "" }: { className?: string }) {
 function Brand() {
   return (
     <Link to="/" className="flex items-center gap-2.5" aria-label="IlmORA Academy — home">
-      <img src={emblem.url} alt="" width={48} height={38} className="h-10 w-auto" />
+      <img src="/favicon.png" alt="" width={64} height={64} className="size-10 object-contain" />
       <span className="flex flex-col leading-none" dir="ltr">
         <span className="font-display text-2xl font-bold text-primary">
           Ilm<span className="text-gold">ORA</span>
@@ -99,7 +97,7 @@ export function Footer() {
     <footer className="bg-navy-deep text-primary-foreground">
       <div className="container-x grid gap-10 py-16 md:grid-cols-4">
         <div>
-          <div className="inline-block rounded-sm bg-background p-3"><img src={logo.url} alt="IlmORA Academy logo" width={160} height={138} loading="lazy" className="h-24 w-auto" /></div>
+          <div className="inline-block rounded-sm bg-background p-3"><img src="/favicon.png" alt="IlmORA Academy logo" width={64} height={64} loading="lazy" className="size-20 object-contain" /></div>
           <p className="mt-4 text-sm opacity-80">{t.footer.about}</p>
         </div>
         <FooterCol title={t.footer.explore}>
