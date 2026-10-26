@@ -257,7 +257,7 @@ export const en = {
     days: "Preferred days and times",
     daysPh: "e.g. Mon, Wed, Fri after 5pm",
     method: "Preferred contact method",
-    methods: ["Email", "WhatsApp", "Phone call"],
+    methods: ["Email", "WhatsApp"],
     message: "Additional message (optional)",
     consent: "I agree to IlmORA Academy using these details to contact me about a trial class, as described in the Privacy Policy.",
     select: "Select…",
